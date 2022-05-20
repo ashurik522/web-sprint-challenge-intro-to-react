@@ -19,6 +19,9 @@ const StyledCards = styled.div`
 
 const Character = props => {
 const {characters} = props
+const cpfl = (string =>{
+    return string.charAt(0).toUpperCase() + string.slice(1);
+})
 
     return(
         <StyledCards>
@@ -27,8 +30,8 @@ const {characters} = props
                 <div className='info'>
                     <h2>Height: {characters.height} cm </h2>
                     <h2>Weight: {characters.mass} kg </h2>
-                    <h2>Gender: {characters.gender}</h2>
-                    <h2>Hair Color: {characters.hair_color}</h2>
+                    <h2>Gender: {cpfl(characters.gender)}</h2>
+                    <h2>Hair Color: {cpfl(characters.hair_color)}</h2>
                 </div>
             </div>        
         </StyledCards>
