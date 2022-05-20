@@ -6,7 +6,14 @@ const StyledCards = styled.div`
     text-shadow: 0px 0px 4px #FFE81F;
     font-family: 'Kanit', sans-serif;
     color: #000000;
-    
+    border-style: inset;
+    border-color:  #FFE81F;
+    padding: 5%;
+    margin: 10%;
+
+    h1{
+        font-size: 35px;
+    }
 
 `
 
